@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/*Normalize*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1.3;
+	font-size: 14px;
+    font-family: 'Open Sans';
+    color: #3d4451;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+:root {
+    --color-cheme: #e8676b;
+    --first-text-color: #3d4451;
+    --second-text-color: #9da0a7;
+}
+
+/* .wrapper {
+    background-image: url('./assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsla(210, 2%, 47%, 0.226);
+    background-blend-mode: overlay;
+    
+} */
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* ------- header ----------- */
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 15px 120px;
+    background: rgba(255, 255, 255, 0.884);
+}
+.menu__list {
+    display: flex;
+    justify-content: center;
+}
+.menu__item {
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+}
+.menu__item:active, 
+.menu__item:hover {
+    border-bottom: 3px solid var(--color-cheme);
+}
+.menu__link {
+    display: inline-block;
+    padding: 5px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--first-text-color);
+}
+/* ------ main --------- */
+.cv {
+    padding-top: 70px;
+    background-image: url('./assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 80vh;
+    background-color: hsla(210, 2%, 47%, 0.226);
+    background-blend-mode: overlay;
+}
+.main__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 50px 40px;
+    margin: 85px auto 0;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+}
+.main__photo {
+    max-width: 300px;
+    padding: 0 15px;
+
+}
+.main__photo img {
+    width: 100%;
+}
+.main__info {
+    flex: 1 1 auto;
+    padding: 0 15px;
+    margin-left: 30px;
+}
+.hello {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: var(--color-cheme);
+    color: #fff;
+    text-transform: uppercase;
+}
+.hello::before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent;
+    border-left-color: var(--color-cheme);
+}
+.main__name {
+    font-size: 36px;
+    color: #3d4451;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main__name > span {
+    font-weight: 400;
+}
+
+.main__speciality {
+    font-size: 18px;
+    line-height: 1.1;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+}
+
+.main__personal-data {
+}
+.personal-data {
+    margin-top: 25px;
+}
+.personal-data__row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.personal-data__title {
+    flex: 0 0 150px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.personal-data__content, .personal-data__content > a {
+    font-size: 15px;
+    color: #9da0a7;
+}
+.cv__about {
+}
+.about-me {
+}
+.about-me__text {
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.8;
+    text-align: center;
+}
+.title {
+    padding-top: 65px;
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+.cv__skills {
+}
+.skills {
+    
+}
+.skills__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 40px;
+    margin: 0 -20px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.skills__skill {
+}
+.skill {
+    flex-basis: 50%;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+.skill__title {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.skill__progress {
+    height: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    color: var(--color-cheme);
+}
+.skill__progress::-webkit-progress-bar {
+    height: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background: hsla(210, 2%, 47%, 0.226);
+}
+.skill__progress::-webkit-progress-value {
+    background-color: var(--color-cheme);
+    border-radius: 20px;
+}
+.projects__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.projects__item {
+    flex: 0 1 45%;
+    margin: 20px;
+    min-height: 200px;
+}
+.projects__img {
+    position: relative;
+    padding-top: 50%;
+}
+.projects__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.projects__content {
+    text-align: center;
+}
+.projects__info {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    color: var(--first-text-color);
+}
+.projects__link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color-cheme);
+    transition: all 0.3s;
+}
+.projects__link:hover {
+    box-shadow: 0 5px 10px 2px rgba(85, 85, 85, 0.39);
+}
+pre {
+    padding: 40px 50px;
+    font-size: 20px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.courses__list li, .lang__list li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 25px;
+    list-style: square;
+}
+.lang {
+    padding-bottom: 30px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    background: #fff;
+}
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 930px;
+}
+.footer__github {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--first-text-color);
+}
+.footer__rsschool img {
+    height: 30px;
+}
+

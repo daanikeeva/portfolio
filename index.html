@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anikeeva Darya CV </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#contacts" class="menu__link">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about-me" class="menu__link">
+                            About me
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#projects" class="menu__link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#courses" class="menu__link">
+                            Courses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="cv">
+            <section class="cv__main main container">
+                <div class="main__row">
+                    <div class="main__photo">
+                        <img src="./assets/img/photo.jpg" alt="my photo">
+                    </div>
+                    <div class="main__info" id="contacts">
+                        <span class="hello">Hello</span>
+                        <h1 class="main__name"><span>I'm </span>Darya Anikeeva</h1>
+                        <h2 class="main__speciality">Junior Frontend Developer</h2>
+                        <div class="main__personal-data personal-data">
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">Age</div>
+                                <div class="personal-data__content">28</div>
+                            </div>
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">Location</div>
+                                <div class="personal-data__content">Rostov-na-Donu, Russia</div>
+                            </div>
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">Phone</div>
+                                <div class="personal-data__content"><a href="tel:+79185734754">+7 (918) 57-34-754</a></div>
+                            </div>
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">E-mail</div>
+                                <div class="personal-data__content"><a href="mailto:daanikeeva@gmail.com" >daanikeeva@gmail.com</a></div>
+                            </div>
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">GitHub</div>
+                                <div class="personal-data__content"><a href="https://github.com/daanikeeva">https://github.com/daanikeeva</a></div>
+                            </div>
+                            <div class="personal-data__row">
+                                <div class="personal-data__title">Discord</div>
+                                <div class="personal-data__content">danika (@daanikeeva)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cv__about about-me container" id="about-me">
+                <h2 class="title">About me</h2>
+                <div class="about-me__text">
+                    <p>
+                        Ever since school, I liked to understand computer programs and technologies, but still I chose a different path and
+5 years ago I graduated in finance.
+Years later, I decided to return to what is really interesting to me, and I am studying front-end development. 
+                    </p>
+                </div>
+                
+            </section>
+            <section class="cv__skills skills container" id="skills">
+                <h2 class="title">Skills</h2>
+                <ul class="skills__info">
+                    <li class="skills__skill skill">
+                        <div class="skill__title">HTML</div>
+                        <progress class="skill__progress" value="50" max="100"></progress>
+                    </li>
+                    <li class="skills__skill skill">
+                        <div class="skill__title">CSS</div>
+                        <progress class="skill__progress" value="45" max="100"></progress>
+                    </li>    
+                    <li class="skills__skill skill">
+                        <div class="skill__title">BEM</div>
+                        <progress class="skill__progress" value="70" max="100"></progress>
+                    </li>      
+                    <li class="skills__skill skill">
+                        <div class="skill__title">JS (in progress)</div>
+                        <progress class="skill__progress" value="20" max="100"></progress>
+                    </li>  
+                    <li class="skills__skill skill">
+                        <div class="skill__title">Git, GitHub</div>
+                        <progress class="skill__progress" value="45" max="100"></progress>
+                    </li>  
+                    <li class="skills__skill skill">
+                        <div class="skill__title">Figma</div>
+                        <progress class="skill__progress" value="75" max="100"></progress>
+                    </li>      
+                </ul>
+            </section>
+            <section class="cv__projects projects container" id="projects">
+                <h2 class="title">Projects</h2>
+                <div class="projects__row">
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/alexa-rise-portfolio.JPG" alt="screenshot site Portfolio photographer"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Portfolio photographer
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/alexa-rise-portfolio/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/eco-sounds.JPG" alt="screenshot site eco-sounds"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Project eco-sounds
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/eco-sounds/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/image-gallery.JPG" alt="screenshot site image-gallery"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Project image-gallery (API Unsplash)
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/image-gallery/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/memory-game.JPG" alt="screenshot site Memory game"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Memory game
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/memory-game/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/john.JPG" alt="screenshot site portfolio John"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Educational project portfolio John
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/John/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/Relvise.JPG" alt="screenshot site Relvise"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Educational project Relvise
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/Relvise/">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/leto-center.png" alt="screenshot site IT school"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Educational project: IT school website
+                            </div>
+                            <a class="projects__link" href="https://daanikeeva.github.io/portfolio/leto-center/">See project</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cv__courses courses container" id="courses">
+                <h2 class="title">Courses</h2>
+                <ul class="courses__list">
+                    <li>
+                        Free course on layout (YouTube)
+                    </li>
+                    <li>
+                        Additional professional advanced training program "Graphic design and layout of web pages" (taking into account the Worldskills standard for the "Web technologies (Worldskills)"
+                    </li>
+                    <li>
+                        RS Schools «JavaScript/Front-end. Stage 0»
+                    </li>
+                    <li>
+                        JavaScript: https://learn.javascript.ru/ (in progress)
+                    </li>
+                </ul>
+            </section>
+            <section class="cv__lang lang container">
+                <h2 class="title">Languages</h2>
+                <ul class="lang__list">
+                    <li>Russian - native</li>
+                    <li>Ukrainian - fluent</li>
+                    <li>English - A1</li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__row container">
+                <a href="https://github.com/daanikeeva" class="footer__github">My GitHub</a>
+                <p>&#169; Darya Anikeeva, 2022</p>
+                <a href="https://rs.school/js/" class="footer__rsschool">
+                    <img src="./assets/img/rss.svg" alt="logo RSSchool">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

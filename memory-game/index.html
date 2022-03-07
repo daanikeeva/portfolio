@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="./assets/svg/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Memory Game</h1>
+        </header>
+        <aside class="rating">
+            <h2>Best results</h2>
+            <ol class="rating__table">
+            </ol>
+        </aside>
+        <aside class="last-games">
+            <h2>Last Games</h2>
+            <ul class="last-games__list">
+            </ul>
+        </aside>
+        <section class="memo">
+            <div class="memo__card" data-princess="Ariel">
+                <img src="./assets/img/Ariel.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Ariel">
+                <img src="./assets/img/Ariel.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Belle">
+                <img src="./assets/img/Belle.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Belle">
+                <img src="./assets/img/Belle.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Cinderella">
+                <img src="./assets/img/Cinderella.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Cinderella">
+                <img src="./assets/img/Cinderella.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Tiana">
+                <img src="./assets/img/Tiana.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Tiana">
+                <img src="./assets/img/Tiana.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Snowwhite">
+                <img src="./assets/img/Snowwhite.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Snowwhite">
+                <img src="./assets/img/Snowwhite.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Avrora">
+                <img src="./assets/img/Avrora.jpg" alt="Avrora" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Avrora">
+                <img src="./assets/img/Avrora.jpg" alt="Avrora" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <!-- <div class="memo__card" data-princess="Anna">
+                <img src="./assets/img/Anna.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Anna">
+                <img src="./assets/img/Anna.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Elsa">
+                <img src="./assets/img/Elsa.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Elsa">
+                <img src="./assets/img/Elsa.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Jasmine">
+                <img src="./assets/img/Jasmine.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Jasmine">
+                <img src="./assets/img/Jasmine.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Merida">
+                <img src="./assets/img/Merida.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Merida">
+                <img src="./assets/img/Merida.jpg" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Rapuntcel">
+                <img src="./assets/img/Rapuntcel.png" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Rapuntcel">
+                <img src="./assets/img/Rapuntcel.png" alt="" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Mulan">
+                <img src="./assets/img/Mulan.png" alt="Avrora" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div>
+            <div class="memo__card" data-princess="Mulan">
+                <img src="./assets/img/Mulan.png" alt="Avrora" class="memo__front">
+                <img src="./assets/img/Logo-Disney.png" alt="back card Disney" class="memo__back">
+            </div> -->
+        </section>
+        <section class="win-game">
+            <h2>Congratulations!</h2>
+            <p class="result">You got the game in <span class="moves-counter"></span> moves</p>
+            <button class="restart">Play again?</button>
+
+        </section>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__data">
+                    <span>©</span>
+                    <span>2022</span>
+                    <a href="https://github.com/daanikeeva">github</a>
+                </div>
+                <a href="https://rs.school/js-stage0/" class="footer__rss"><img src="./assets/svg/rss.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
